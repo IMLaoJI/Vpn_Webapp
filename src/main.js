@@ -6,6 +6,16 @@ import App from './App.vue';
 
 // 3.0 将vue-router集成到这个项目中来
 import vueRouter from 'vue-router';
+// import MuseUI from "muse-ui"
+// import "muse-ui/dist/muse-ui.css"
+// Vue.use(MuseUI);
+
+import YDUI from 'vue-ydui';
+import 'vue-ydui/dist/ydui.rem.css';
+/* 使用px：import 'vue-ydui/dist/ydui.px.css'; */
+
+Vue.use(YDUI);
+
 // 3.0.1 将vueRouter对象绑定到Vue对象上
 Vue.use(vueRouter);
 

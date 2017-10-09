@@ -77,7 +77,7 @@ overflow: hidden;
 .mint-button--small {
     font-size: 14px;
     height: 33px;
-    margin-left: 2.5rem;
+    margin-left: 2.9rem;
     margin-top:0.8rem;
 }
 .clear{ clear:both} 
@@ -89,7 +89,7 @@ margin-top: 1rem;
 .status{
     display: block;
    margin-top: 0.2rem;
-   margin-left: 2.5rem;
+      margin-left: 2.9rem;
 }
 .next{   
 }
