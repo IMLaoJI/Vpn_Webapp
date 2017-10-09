@@ -1,8 +1,10 @@
 <template>
 
 		<div id="tmpl" >
-
-  <i class="fa fa-power-off fa-5x power" @click="openVpn">   <span class="status"> <font size="5px">{{status}}</font></span> </i> 
+  <svg class="icon" aria-hidden="true"  @click="openVpn"> 
+<use xlink:href="#icon-power"></use>
+</svg>
+   <span class="status"> <font size="5px">{{status}}</font></span> 
   <mt-button  class="next" size="small" @click="next">下一条</mt-button>
   <div class="page-cell">
    <mt-cell title="选择线路" is-link :to="{ name: 'vpns' }" :value="num1+'条'"></mt-cell>
@@ -66,6 +68,12 @@ import { Cell } from 'mint-ui';
 </script>
 
 <style >
+.icon {
+margin-left: 10%;
+vertical-align: -0.15em;
+fill: currentColor;
+overflow: hidden;
+}
 .mint-button--small {
     font-size: 14px;
     height: 33px;
@@ -81,6 +89,7 @@ margin-top: 1rem;
 .status{
     display: block;
    margin-top: 0.2rem;
+   margin-left: 2.5rem;
 }
 .next{   
 }

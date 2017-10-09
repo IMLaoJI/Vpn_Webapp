@@ -8,6 +8,7 @@ module.exports={
   },
   module:{
   	loaders:[
+    
   		{
   			test: /\.css$/,  //打包 .css文件
   			loader:'style-loader!css-loader'
@@ -30,6 +31,7 @@ module.exports={
         loader:'babel-loader',
         exclude:/node_modules/ 
       },
+     
        {
         test: /.vue$/,  // 解析 .vue 组件页面文件
         loader:'vue-loader' //

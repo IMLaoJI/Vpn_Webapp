@@ -24,7 +24,7 @@ const agencyApp = resolve => require(['./components/agencyApp/agencyApp.vue'], r
 var router1 = new vueRouter({
 	linkActiveClass:'mui-active',  //改变路由激活时的class名称
 	routes:[
-		{path:'/',name:"my",redirect:'/my'},// 设置当服务器启动的时候默认进入 /my中
+		{path:'/',redirect:'/my'},// 设置当服务器启动的时候默认进入 /my中
 		{path:'/my',name:"my",component:my},   //我的
 		{path:'/setting',name:"setting",component:setting},  // 购物车
 		{path:'/clients',name:"clients",component:clients},
@@ -45,7 +45,7 @@ Vue.use(mintui);
 
 // 5.0 注册mui的css样式
 import '../statics/mui/css/mui.css';
-
+import '../statics/js/iconfont.js';
 // 6.0 导入一个当前系统的全局基本样式
 import '../statics/css/site.css';
 

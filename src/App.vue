@@ -13,14 +13,12 @@
 
 		<!-- 3.0 利用mui中的tabbar组件实现系统的底部 -->
 		<nav class="mui-bar mui-bar-tab">
-			<router-link class="mui-tab-item " to="/my">
-				<span class="mui-icon mui-icon-home"></span>
+			<router-link class="mui-tab-item" to="/my">
+					<span class="mui-icon mui-icon-minus"></span>
 				<span class="mui-tab-label">主页</span>
 			</router-link>
 			<router-link class="mui-tab-item" to="/clients">
-				<span class="mui-icon mui-icon-person">
-				
-				</span>
+				<span class="mui-icon mui-icon-person"></span>
 				<span class="mui-tab-label">用户</span>
 			</router-link>
 		
@@ -71,6 +69,7 @@
 
 <style scoped>
 /*当前页面的css样式写到这里，其中scoped表示这个里面写的css代码只是在当前组件页面上有效，不会去影响到其他组件页面*/
+
 #back{
 	width: 60px;
 	position: absolute;
