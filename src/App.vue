@@ -12,7 +12,7 @@
 		<router-view></router-view>
 
 		<!-- 3.0 利用mui中的tabbar组件实现系统的底部 -->
-		<nav class="mui-bar mui-bar-tab">
+		<nav class="mui-bar mui-bar-tab" v-if="isShow2">
 			<router-link class="mui-tab-item" to="/my">
 					<span class="mui-icon mui-icon-minus"></span>
 				<span class="mui-tab-label">主页</span>
@@ -36,8 +36,8 @@
 		data(){  //等价于 es5的 data:function(){
 			return {
 				isShow : false,
+				isShow2:true,
 				title:"主页"
-				
 			}
 		},
 	watch:{
@@ -46,13 +46,17 @@
 				if(newval.path.toLowerCase() == '/my'){
 					//表示当前页面是首页应该要隐藏返回按钮
 					this.isShow = false;
+					this.isShow2 = true;
 				}else if (newval.path.toLowerCase()=='/setting') {
 					this.isShow = false;
+					this.isShow2 = true;
 				}else if (newval.path.toLowerCase()=='/clients') {
 					this.isShow = false;
+					this.isShow2 = true;
 				}else{
 					//非首页要显示返回按钮
 					this.isShow = true;
+					this.isShow2 = false;
 				}
 			}
 		},
